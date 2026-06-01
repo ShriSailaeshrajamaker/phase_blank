@@ -1,0 +1,154 @@
+---
+permalink: "/phaseblank/index.html"
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover useful products curated by @phase.blank">
+  <title>@phase.blank</title>
+  <style>
+    :root{ --accent:#6f8fb3; --brand:#9fb8d4; --text:#e5edf7; --border:#263547; --bg:#0b1220; }
+    *{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,-apple-system,sans-serif;}
+    body{background:var(--bg);color:var(--text);}
+    a{color:var(--brand);}
+    .top-banner{position:sticky;top:0;background:linear-gradient(90deg,#111827,#334155);color:#fff;text-align:center;padding:10px;font-size:14px;z-index:1000;}
+    .top-banner a{color:#22c55e;text-decoration:none;font-weight:600;margin-left:6px;}
+    .navbar{background:#111827;border-bottom:1px solid var(--border);position:relative;}
+    .nav-inner{max-width:1200px;margin:auto;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;}
+    .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;color:var(--brand);}
+    .logo img{width:36px;height:36px;border-radius:50%;}
+    .nav-links a{text-decoration:none;color:#d6e4f5;font-weight:600;display:flex;align-items:center;gap:6px;}
+    .hero{text-align:center;padding:50px 20px 20px;}
+    .hero h1{font-size:34px;color:var(--brand);margin-bottom:8px;}
+    .hero p{color:#b8c4d4;font-size:14px;}
+    .search-wrapper{display:flex;justify-content:center;padding:25px 20px;}
+    .search-box{width:100%;max-width:420px;padding:13px 16px;border-radius:8px;border:1px solid #334155;font-size:15px;background:#111827;color:#fff;}
+    .search-box::placeholder{color:#94a3b8;}
+    .category-tabs{max-width:1200px;margin:20px auto 10px;padding:0 20px;overflow-x:auto;white-space:nowrap;scrollbar-width:none;}
+    .category-tabs::-webkit-scrollbar{display:none;}
+    .tabs-container{display:flex;justify-content:center;gap:10px;padding:10px 0;}
+    .tab{padding:10px 18px;border-radius:50px;background:#1a2433;color:#d6e4f5;font-size:14px;font-weight:500;cursor:pointer;transition:all .3s;white-space:nowrap;}
+    .tab.active{background:#334155;color:#fff;font-weight:600;}
+    .products{max-width:1200px;margin:auto;padding:10px 20px 40px;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:22px;}
+    .product{background:#111827;border-radius:10px;overflow:hidden;border:1px solid var(--border);cursor:pointer;transition:.2s;}
+    .product:hover{transform:translateY(-3px);box-shadow:0 6px 18px rgba(0,0,0,.3);}
+    .product img{width:100%;height:180px;object-fit:cover;}
+    .product-title{padding:14px;text-align:center;font-weight:600;color:var(--text);}
+    .special-card{border:2px solid #f97316;background:#1f2937;}
+    .promo-block{max-width:800px;margin:30px auto;background:#1a2433;border:1px solid var(--border);border-radius:14px;text-align:center;padding:30px 20px;}
+    .promo-block h3{color:var(--brand);margin-bottom:8px;}
+    .promo-block p{color:#b8c4d4;margin-bottom:16px;}
+    .promo-btn{display:inline-block;background:#334155;color:#fff;padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:600;}
+    .trust-bar{text-align:center;color:#9fb8d4;font-size:13px;padding:20px;}
+    .whatsapp-float{position:fixed;bottom:20px;right:20px;width:54px;height:54px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,.3);}
+    .footer-bottom{text-align:center;color:#8a93a3;font-size:13px;padding:20px;}
+    .disclosure{font-size:11px;color:#8a93a3;text-align:center;padding:12px;border-top:1px solid var(--border);}
+  </style>
+</head>
+<body>
+  <div class="top-banner">✨ 100+ Curated Picks <a href="https://rixsto.in" target="_blank" rel="noopener">Explore RIXSTO →</a></div>
+
+  <div class="navbar"><div class="nav-inner">
+    <div class="logo"><a href="https://www.instagram.com/phase.blank" target="_blank" rel="noopener" style="color:var(--brand)">@phase.blank</a></div>
+    <div class="nav-links"><a href="https://www.instagram.com/phase.blank" target="_blank" rel="noopener">Instagram</a></div>
+  </div></div>
+
+  <div class="hero">
+    <h1><a href="https://www.instagram.com/phase.blank" target="_blank" style="color:#9fb8d4;text-decoration:underline;">@phase.blank</a></h1>
+    <p>Discover useful products handpicked for you ❤️</p>
+  </div>
+
+  <div class="search-wrapper"><input id="searchInput" class="search-box" placeholder="Search products..."></div>
+  <div class="category-tabs"><div class="tabs-container" id="tabsContainer"></div></div>
+  <div class="products" id="productGrid"></div>
+
+  <div class="promo-block">
+    <h3>👀 Finding these useful?</h3>
+    <p>We've got better deals &amp; exclusive picks on our main store.</p>
+    <a href="https://rixsto.in" class="promo-btn">Explore RIXSTO →</a>
+  </div>
+
+  <div class="trust-bar">✅ Best Deals &nbsp;&nbsp; 🚚 Fast Delivery &nbsp;&nbsp; 🔒 Secure Shopping</div>
+  <a href="https://wa.me/9361149099" target="_blank" class="whatsapp-float">💬</a>
+
+  <div class="footer-bottom">© 2026 RIXSTO</div>
+  <div class="disclosure">This page contains affiliate links. We may earn a commission if you make a purchase through our links at no extra cost to you.</div>
+
+  <script>
+    const SITE = "phaseblank";
+    let products = [];
+    const grid = document.getElementById("productGrid");
+    const tabsContainer = document.getElementById("tabsContainer");
+
+    function slugify(s){return (s||"").toLowerCase().trim().replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"");}
+
+    function getCategories(){
+      const c = new Set(["Latest"]);
+      products.forEach(p=>{ if(p.category) c.add(p.category); });
+      return [...c];
+    }
+    function renderTabs(){
+      tabsContainer.innerHTML="";
+      getCategories().forEach(cat=>{
+        const t=document.createElement("div");
+        t.className="tab"; t.textContent=cat;
+        if(cat==="Latest") t.classList.add("active");
+        t.onclick=()=>{document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));t.classList.add("active");filterByCategory(cat);};
+        tabsContainer.appendChild(t);
+      });
+    }
+    function renderProducts(list){
+      grid.innerHTML="";
+      list.forEach((product,index)=>{
+        if(index===2){
+          const promo=document.createElement("div");
+          promo.className="product special-card";
+          promo.innerHTML=`<img src="logo.png" style="height:180px;object-fit:contain;background:#fff;"><div class="product-title">🔥 Visit Store</div>`;
+          promo.onclick=()=>window.open("https://rixsto.in","_blank");
+          grid.appendChild(promo);
+        }
+        const slug = product.slug || slugify(product.name);
+        const card=document.createElement("div");
+        card.className="product";
+        // → go to the REAL generated blog page
+        card.onclick=()=>{ window.location.href = "/"+SITE+"/blogs/"+slug+"/"; };
+        card.innerHTML=`<img src="${product.image}"><div class="product-title">${product.name}</div>`;
+        grid.appendChild(card);
+      });
+    }
+    function filterByCategory(cat){
+      renderProducts(cat==="Latest"?[...products]:products.filter(p=>p.category===cat));
+    }
+
+    fetch("/products/phaseblank.json")
+      .then(r=>r.json())
+      .then(data=>{
+        products=(data.products||[]).map(p=>({...p,slug:p.slug||slugify(p.name)}));
+        renderTabs(); renderProducts(products); startTyping();
+      })
+      .catch(()=>{ renderTabs(); renderProducts(products); });
+
+    const searchInput=document.getElementById("searchInput");
+    searchInput.addEventListener("input",e=>{
+      const v=e.target.value.toLowerCase();
+      const at=(document.querySelector(".tab.active")||{}).textContent||"Latest";
+      const base=at==="Latest"?products:products.filter(p=>p.category===at);
+      renderProducts(base.filter(p=>p.name.toLowerCase().includes(v)));
+    });
+
+    let ph=[],ti=0,ci=0,del=false;
+    function startTyping(){ ph=products.map(p=>"Search "+p.name+"..."); if(!ph.length)ph=["Search products..."]; type(); }
+    function type(){
+      if(document.activeElement===searchInput&&searchInput.value.length>0){setTimeout(type,400);return;}
+      const t=ph[ti]||""; del?ci--:ci++;
+      searchInput.setAttribute("placeholder",t.substring(0,ci));
+      let sp=del?40:80;
+      if(!del&&ci===t.length){sp=1200;del=true;}
+      else if(del&&ci===0){del=false;ti=(ti+1)%ph.length;sp=400;}
+      setTimeout(type,sp);
+    }
+  </script>
+</body>
+</html>

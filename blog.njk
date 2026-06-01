@@ -1,0 +1,88 @@
+---
+pagination:
+  data: blogs
+  size: 1
+  alias: post
+permalink: "/{{ post.site }}/blogs/{{ post.slug }}/index.html"
+eleventyComputed:
+  title: "{{ post.name }} — Review"
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ post.name }} — Review | {{ post.siteLabel }}</title>
+  <meta name="description" content="{% if post.lead %}{{ post.lead }}{% else %}Honest review of {{ post.name }}.{% endif %}">
+  <style>
+    :root{
+      --accent:#6f8fb3; --brand:#9fb8d4; --text:#e5edf7;
+      --border:#263547; --bg:#0b1220; --card:#111827; --soft:#cdd9e8;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,-apple-system,sans-serif;}
+    body{background:var(--bg);color:var(--text);line-height:1.6;}
+    a{color:var(--brand);}
+    .blog-wrap{max-width:760px;margin:0 auto;padding:30px 20px 60px;}
+    .blog-back{display:inline-block;color:var(--brand);font-size:14px;font-weight:600;margin-bottom:22px;text-decoration:none;}
+    .blog-back:hover{color:var(--accent);}
+    .blog-cat{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--brand);background:#1a2433;border:1px solid var(--border);padding:5px 12px;border-radius:50px;margin-bottom:14px;}
+    .blog-title{font-size:32px;color:var(--brand);line-height:1.2;margin-bottom:20px;}
+    .blog-hero{border-radius:14px;overflow:hidden;border:1px solid var(--border);margin-bottom:26px;}
+    .blog-hero img{width:100%;display:block;}
+    .blog-lead{font-size:18px;color:var(--soft);line-height:1.7;margin-bottom:26px;}
+    .buy-btn{display:inline-block;background:linear-gradient(135deg,#22c55e,#16a34a);color:#fff;font-weight:700;font-size:16px;padding:14px 26px;border-radius:10px;text-decoration:none;transition:transform .2s,box-shadow .2s;box-shadow:0 8px 22px rgba(34,197,94,.28);}
+    .buy-btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(34,197,94,.4);}
+    .blog-pc{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:30px 0;}
+    .pc{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px 20px;}
+    .pc h4{font-size:16px;margin-bottom:12px;}
+    .pc-pros h4{color:#22c55e;} .pc-cons h4{color:#f97316;}
+    .pc ul{list-style:none;} .pc li{font-size:14px;color:var(--soft);padding-left:20px;position:relative;margin-bottom:8px;line-height:1.5;}
+    .pc-pros li::before{content:"✓";position:absolute;left:0;color:#22c55e;font-weight:700;}
+    .pc-cons li::before{content:"✕";position:absolute;left:0;color:#f97316;font-weight:700;}
+    .blog-verdict{background:#1a2433;border:1px solid var(--border);border-radius:12px;padding:22px 24px;margin:26px 0;}
+    .blog-verdict h3{color:var(--brand);font-size:18px;margin-bottom:10px;}
+    .blog-verdict p{color:var(--soft);font-size:15px;}
+    .blog-buy-final{text-align:center;margin:34px 0 10px;}
+    .blog-promo{text-align:center;margin-top:40px;padding:26px;background:#1a2433;border:1px solid var(--border);border-radius:14px;}
+    .blog-promo p{color:var(--soft);margin-bottom:14px;}
+    .promo-btn{display:inline-block;background:#334155;color:#fff;padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:600;}
+    .disclosure{font-size:11px;color:#8a93a3;text-align:center;padding:20px;border-top:1px solid var(--border);margin-top:30px;}
+    @media(max-width:600px){.blog-pc{grid-template-columns:1fr;}.blog-title{font-size:26px;}}
+  </style>
+</head>
+<body>
+  <div class="blog-wrap">
+    <a class="blog-back" href="/{{ post.site }}/">← Back to products</a>
+    {% if post.category %}<div class="blog-cat">{{ post.category }}</div>{% endif %}
+    <h1 class="blog-title">{{ post.name }}</h1>
+    {% if post.blogImage %}<div class="blog-hero"><img src="{{ post.blogImage }}" alt="{{ post.name }}"></div>{% endif %}
+    {% if post.lead %}<p class="blog-lead">{{ post.lead }}</p>{% endif %}
+
+    <a class="buy-btn" href="{{ post.link }}" target="_blank" rel="noopener sponsored nofollow">🛒 Buy this product →</a>
+
+    {% if post.pros.length or post.cons.length %}
+    <div class="blog-pc">
+      {% if post.pros.length %}<div class="pc pc-pros"><h4>👍 Pros</h4><ul>{% for x in post.pros %}<li>{{ x }}</li>{% endfor %}</ul></div>{% endif %}
+      {% if post.cons.length %}<div class="pc pc-cons"><h4>👎 Cons</h4><ul>{% for x in post.cons %}<li>{{ x }}</li>{% endfor %}</ul></div>{% endif %}
+    </div>
+    {% endif %}
+
+    {% if post.verdict %}
+    <div class="blog-verdict"><h3>Verdict</h3><p>{{ post.verdict }}</p></div>
+    {% endif %}
+
+    <div class="blog-buy-final">
+      <a class="buy-btn" href="{{ post.link }}" target="_blank" rel="noopener sponsored nofollow">🛒 Buy this product →</a>
+    </div>
+
+    <div class="blog-promo">
+      <p>Want more deals &amp; exclusive picks?</p>
+      <a class="promo-btn" href="https://rixsto.in" target="_blank" rel="noopener">Explore RIXSTO →</a>
+    </div>
+
+    <div class="disclosure">
+      This page contains affiliate links. We may earn a commission if you buy through them, at no extra cost to you.
+    </div>
+  </div>
+</body>
+</html>

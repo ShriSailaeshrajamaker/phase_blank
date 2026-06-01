@@ -1,0 +1,13 @@
+# Netlify reads this on every deploy.
+# When the CMS publishes (commits to GitHub), Netlify runs this build,
+# which regenerates all the /<site>/blogs/<slug>/ pages from the JSON.
+
+[build]
+  command = "npm run build"
+  publish = "_site"
+
+# Nice-to-have: let /site/blogs/slug resolve even without the trailing slash.
+[[redirects]]
+  from = "/:site/blogs/:slug"
+  to = "/:site/blogs/:slug/index.html"
+  status = 200
