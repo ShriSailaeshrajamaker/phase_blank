@@ -1,112 +1,147 @@
 {
   "products": [
     {
+      "pros": [
+        "Holds a full tray neatly",
+        "BPA-free, fridge-safe",
+        "Stackable with the lid",
+        "Cheap and sturdy"
+      ],
       "name": "Plastic Egg Container",
-      "image": "https://rukminim2.flixcart.com/image/1536/1536/xif0q/container/l/g/c/1-kitchen-plastic-egg-holder-bpa-free-fridge-organizer-with-lid-original-imahf9k7dhyvatjh.jpeg?q=90",
-      "category": "Kitchen Gadgets",
-      "link": "https://fkrt.co/y0Af3y",
       "slug": "plastic-egg-container",
+      "cons": [
+        "Single size only",
+        "Lid fit is a bit snug at first"
+      ],
+      "verdict": "A tiny upgrade that genuinely tidies your fridge. Worth it at this price.",
+      "link": "https://fkrt.co/y0Af3y",
+      "image": "https://rukminim2.flixcart.com/image/1536/1536/xif0q/container/l/g/c/1-kitchen-plastic-egg-holder-bpa-free-fridge-organizer-with-lid-original-imahf9k7dhyvatjh.jpeg?q=90",
       "lead": "If your fridge door is a graveyard of cracked eggs, this little tray quietly fixes that for almost nothing.",
-      "blog_image": "",
-      "pros": ["Holds a full tray neatly", "BPA-free, fridge-safe", "Stackable with the lid", "Cheap and sturdy"],
-      "cons": ["Single size only", "Lid fit is a bit snug at first"],
-      "verdict": "A tiny upgrade that genuinely tidies your fridge. Worth it at this price."
+      "category": "Kitchen Gadgets",
+      "blog_image": ""
     },
     {
+      "pros": [
+        "Smooth, no-drip pump",
+        "Easy to refill",
+        "Looks premium for the price"
+      ],
       "name": "Soap Dispenser",
-      "image": "https://rukminim2.flixcart.com/image/1536/1536/xif0q/container/0/m/9/-original-imahjzvkhg8xgjwz.jpeg?q=90",
-      "category": "Home Gadgets",
-      "link": "https://fkrt.co/7nuzob",
       "slug": "soap-dispenser",
+      "cons": [
+        "Plastic, not glass"
+      ],
+      "verdict": "Simple, useful, and cheap. An easy yes for a tidier counter.",
+      "link": "https://fkrt.co/7nuzob",
+      "image": "https://rukminim2.flixcart.com/image/1536/1536/xif0q/container/0/m/9/-original-imahjzvkhg8xgjwz.jpeg?q=90",
       "lead": "A clean-looking pump dispenser that makes any sink or kitchen counter look a little more put-together.",
-      "blog_image": "",
-      "pros": ["Smooth, no-drip pump", "Easy to refill", "Looks premium for the price"],
-      "cons": ["Plastic, not glass"],
-      "verdict": "Simple, useful, and cheap. An easy yes for a tidier counter."
-    },
-    {
-      "name": "Ceramic Pickle Jar",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKy1-NeAuXCcwrHrKoHz7qpNP1i3OuPCvPng&s",
-      "category": "Kitchen Gadgets",
-      "link": "https://fkrt.co/XkkOYE",
-      "slug": "ceramic-pickle-jar",
-      "lead": "",
-      "blog_image": "",
-      "pros": [],
-      "cons": [],
-      "verdict": ""
-    },
-    {
-      "name": "Bird Home Decor",
-      "image": "https://rukminim3.flixcart.com/image/640/558/xif0q/shopsy-showpiece-figurine/a/b/o/23-9-sbn-02-bird-animal-showpiece-bindian-23-original-imah46m7mgdkf5bg.jpeg?q=60&crop=false",
       "category": "Home Gadgets",
-      "link": "https://extp.in/GI3Ufc",
+      "blog_image": ""
+    },
+    {
+      "pros": [],
+      "name": "Ceramic Pickle Jar",
+      "slug": "ceramic-pickle-jar",
+      "cons": [],
+      "verdict": "",
+      "link": "https://fkrt.co/XkkOYE",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKy1-NeAuXCcwrHrKoHz7qpNP1i3OuPCvPng&s",
+      "lead": "",
+      "category": "Kitchen Gadgets",
+      "blog_image": ""
+    },
+    {
+      "pros": [],
+      "name": "Bird Home Decor",
       "slug": "bird-home-decor",
-      "lead": "",
-      "blog_image": "",
-      "pros": [],
       "cons": [],
-      "verdict": ""
+      "verdict": "",
+      "link": "https://extp.in/GI3Ufc",
+      "image": "https://rukminim3.flixcart.com/image/640/558/xif0q/shopsy-showpiece-figurine/a/b/o/23-9-sbn-02-bird-animal-showpiece-bindian-23-original-imah46m7mgdkf5bg.jpeg?q=60&crop=false",
+      "lead": "",
+      "category": "Home Gadgets",
+      "blog_image": ""
     },
     {
+      "pros": [],
       "name": "Digital Watch",
-      "image": "https://rukminim2.flixcart.com/image/1366/1366/xif0q/watch/u/z/g/1-s-shock-black-sport-new-multi-function-durable-latest-stylish-original-imahbt7fgq2jpxzb.jpeg?q=90",
-      "category": "Fashion Accessories",
-      "link": "https://fkrt.co/OTk86T",
       "slug": "digital-watch",
-      "lead": "",
-      "blog_image": "",
-      "pros": [],
       "cons": [],
-      "verdict": ""
-    },
-    {
-      "name": "Trigger Trinity 2",
-      "image": "https://m.media-amazon.com/images/I/71NUL52cULL.jpg_BO30,255,255,255_UF750,750_SR1910,1000,0,C_QL100_.jpg",
-      "category": "Smartphone Accessories",
-      "link": "https://fkrt.co/Sn7acb",
-      "slug": "trigger-trinity-2",
+      "verdict": "",
+      "link": "https://fkrt.co/OTk86T",
+      "image": "https://rukminim2.flixcart.com/image/1366/1366/xif0q/watch/u/z/g/1-s-shock-black-sport-new-multi-function-durable-latest-stylish-original-imahbt7fgq2jpxzb.jpeg?q=90",
       "lead": "",
-      "blog_image": "",
-      "pros": [],
-      "cons": [],
-      "verdict": ""
-    },
-    {
-      "name": "Decorasia Spoons",
-      "image": "https://rukminim2.flixcart.com/image/1366/1366/xif0q/spoon/g/q/z/a1-quality-decorasia-original-imahk56ac4xvhvh8.jpeg?q=90",
-      "category": "Kitchen Gadgets",
-      "link": "https://fkrt.co/2MZ3pq",
-      "slug": "decorasia-spoons",
-      "lead": "",
-      "blog_image": "",
-      "pros": [],
-      "cons": [],
-      "verdict": ""
-    },
-    {
-      "name": "Cookzella Containers",
-      "image": "https://rukminim2.flixcart.com/image/1366/1366/xif0q/storage-basket/5/g/s/6-f-basket-6-shoperd-original-imahbtfgcftjfutk.jpeg?q=90",
-      "category": "Kitchen Gadgets",
-      "link": "https://fkrt.co/6XrEvc",
-      "slug": "cookzella-containers",
-      "lead": "",
-      "blog_image": "",
-      "pros": [],
-      "cons": [],
-      "verdict": ""
-    },
-    {
-      "name": "VISCONTI Perfume",
-      "image": "https://www.visconti.in/cdn/shop/files/Women-Gift-3.png?v=1725434121",
       "category": "Fashion Accessories",
-      "link": "https://fkrt.co/iU4eUi",
-      "slug": "visconti-perfume",
-      "lead": "",
-      "blog_image": "",
+      "blog_image": ""
+    },
+    {
       "pros": [],
+      "name": "Trigger Trinity 2",
+      "slug": "trigger-trinity-2",
       "cons": [],
-      "verdict": ""
+      "verdict": "",
+      "link": "https://fkrt.co/Sn7acb",
+      "image": "https://m.media-amazon.com/images/I/71NUL52cULL.jpg_BO30,255,255,255_UF750,750_SR1910,1000,0,C_QL100_.jpg",
+      "lead": "",
+      "category": "Smartphone Accessories",
+      "blog_image": ""
+    },
+    {
+      "pros": [],
+      "name": "Decorasia Spoons",
+      "slug": "decorasia-spoons",
+      "cons": [],
+      "verdict": "",
+      "link": "https://fkrt.co/2MZ3pq",
+      "image": "https://rukminim2.flixcart.com/image/1366/1366/xif0q/spoon/g/q/z/a1-quality-decorasia-original-imahk56ac4xvhvh8.jpeg?q=90",
+      "lead": "",
+      "category": "Kitchen Gadgets",
+      "blog_image": ""
+    },
+    {
+      "pros": [],
+      "name": "Cookzella Containers",
+      "slug": "cookzella-containers",
+      "cons": [],
+      "verdict": "",
+      "link": "https://fkrt.co/6XrEvc",
+      "image": "https://rukminim2.flixcart.com/image/1366/1366/xif0q/storage-basket/5/g/s/6-f-basket-6-shoperd-original-imahbtfgcftjfutk.jpeg?q=90",
+      "lead": "",
+      "category": "Kitchen Gadgets",
+      "blog_image": ""
+    },
+    {
+      "pros": [],
+      "name": "VISCONTI Perfume",
+      "slug": "visconti-perfume",
+      "cons": [],
+      "verdict": "",
+      "link": "https://fkrt.co/iU4eUi",
+      "image": "https://www.visconti.in/cdn/shop/files/Women-Gift-3.png?v=1725434121",
+      "lead": "",
+      "category": "Fashion Accessories",
+      "blog_image": ""
+    },
+    {
+      "pros": [
+        "Leak-proof, locking lid    ",
+        "Keeps food warm for 4-5 hours",
+        "Three separate compartments",
+        "Rust-proof food-grade steel",
+        "Easy to clean, dishwasher safe"
+      ],
+      "name": "Stainless Steel Lunch Box (3 Compartments)",
+      "slug": "steel-lunch-box",
+      "cons": [
+        "A little heavy when fully packed",
+        "Slightly pricier than plastic boxes"
+      ],
+      "verdict": "If you carry lunch daily, this pays for itself fast. The leak-proof seal alone makes it worth it — easily the most practical pick on this list.",
+      "link": "https://fkrt.co/your-affiliate-link",
+      "image": "https://m.media-amazon.com/images/I/71pX5h6mQ-L._SL1500_.jpg",
+      "lead": "Tired of soggy, leaky lunches by noon? This three-compartment steel box keeps everything sealed, separate, and warm — and it's built like a tank.",
+      "blog_divider": "",
+      "category": "Kitchen Gadgets"
     }
   ]
 }
